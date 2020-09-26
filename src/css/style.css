@@ -4,14 +4,10 @@
 	margin-right: auto;
 }
 
-.active {
+.message-popover {
 	position: absolute;
 	width: 200px;
 	border: 1px solid #79f879;
-}
-
-.invisible {
-	display: none;
 }
 
 .popover-title, .popover-body, .button-popover {
