@@ -14,8 +14,8 @@ btnPop.addEventListener('click', (event) => {
 		<div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
 	`;
 
-	btnPop.appendChild(message);
+	btnPop.insertAdjacentElement("beforeend", message);
 	message.classList.add('active');
-	message.style.left = `${btnPop.offsetWidth  + message.offsetWidth / 2 - (message.offsetLeft - btnPop.offsetLeft) / 2}px`;
+	message.style.left = `${message.offsetLeft - (message.offsetLeft - btnPop.offsetLeft) + (btnPop.offsetWidth  - message.offsetWidth) / 2}px`;
 	message.style.top = `${btnPop.offsetTop - (message.offsetHeight + 5)}px`
 })
